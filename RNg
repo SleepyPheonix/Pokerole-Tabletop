@@ -1,0 +1,35 @@
+using System;
+
+public class HelloWorld
+{
+	public static void Main(string[] args)
+	{
+		while (1 == 1)
+		{
+		//Generate Random Number Based On Rank Entry
+		Console.WriteLine("What is their rank?");
+		string rank = Console.ReadLine();
+		if (rank == "Starter")
+		{
+			Random rnd = new Random();
+			int move = rnd.Next(1, 4);
+			if (move == 1)
+			{
+				Console.WriteLine("Tackle - Normal - Accuracy:Dex+Brawl - Damage: Str+2");
+			}
+			else if (move == 2)
+			{
+				Console.WriteLine("Growl - Normal - Accuracy:Tough/Cute+Perform - Effect:-1 Str[Sound Based]");
+			}
+			else if (move == 3)
+			{
+			    Console.WriteLine("Tackle - Normal - Accuracy:Dex+Brawl - Damage: Str+2");
+			}
+				else if (move == 4)
+			{
+				Console.WriteLine("Growl - Normal - Accuracy:Tough/Cute+Perform - Effect:-1 Str[Sound Based]");
+			}
+		}
+	}
+	}
+}
